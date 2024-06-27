@@ -1,0 +1,45 @@
+
+spring:
+  application:
+    name: 05-Product-Service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root1234
+    url: jdbc:mysql://localhost:3306/ecomm
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    
+server:
+  port: 8082
+  
+product-service:
+ messages:
+  categoryAdded: Category Added Successfully
+  categoryAddErr: Failed to Add Category
+  categoryUpdate: Category Updated Successfully
+  categoryUpdateErr: Failed to update category
+  categoryFetch: All Categories fetched successfully
+  categoryFetchErr: Failed to fetch all categories
+  categorySelect: Category Retrieved Successfully
+  categorySelectErr: Failed to retrieve category
+  categoryDelete: Category deleted successfully
+  categoryDeleteErr: Failed to delete category
+  productAdded: Product Added Successfully
+  productAddErr: Failed to Add Product
+  productUpdate: Product Updated Successfully
+  productUpdateErr: Failed to update Product
+  productFetch: All Products fetched successfully
+  productFetchErr: Failed to fetch all Products
+  productSelect: Product Retrieved Successfully
+  productSelectErr: Failed to retrieve Product
+  productDelete: Product deleted successfully
+  productDeleteErr: Failed to delete Product
+  
+  
+        
